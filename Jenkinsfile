@@ -1,6 +1,10 @@
 pipeline {
-    
-    agent any
+    agent {
+        docker {
+            image 'node:14'
+            args '-u root' // use root user to install packages
+        }
+    }
     
     stages {
         stage('Clean previous installation') {
