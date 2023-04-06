@@ -8,7 +8,7 @@ pipeline {
         APP_DIR = '/var/www/html'
     }
     tools {
-        nodejs 'node14'
+        nodejs 'npm'
     }
     stages {
         stage('Clean previous installation') {
