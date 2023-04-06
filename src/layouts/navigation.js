@@ -207,8 +207,8 @@ const pages = {
   ],
   portfolio: [
     {
-      title: 'Grid View',
-      href: '/portfolio-grid',
+      title: 'Angular',
+      href: 'http://angular.cvillegas-dev.com',
     },
     {
       title: 'Masonry',
