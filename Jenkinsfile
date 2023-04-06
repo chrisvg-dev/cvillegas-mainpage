@@ -1,58 +1,31 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:14-alpine'
-        }
-    }
-    environment {
-        APP_DIR = '/var/www/html'
-    }
-    tools {
-        nodejs 'npm'
-    }
+    
+    agent any
+    
     stages {
         stage('Clean previous installation') {
             steps {
-                echo 'Deleting previous files...'
-                sh 'rm -rf build/*'
+                sh 'echo delete previous files'
             }
         }       
         stage('Install dependencies') {
             steps {
-                echo 'Installing dependencies...'
-                sh 'npm install --force'
+                sh 'npm install -f'
             }
         }
-        stage('Test application') {
-            steps {
-                echo 'Running tests...'
-                sh 'yarn test'
-            }
-        }
+        
         stage('Build application') {
             steps {
-                echo 'Building application...'
-                sh 'yarn build'
+                sh 'npm run build'
             }
         }
+        
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
-                sh "cp -rp build/* ${env.APP_DIR}"
+                sh 'cp -rp build/* /var/www/html'
                 sh 'sudo service apache2 reload'
-                echo 'Deployment complete'
+                sh 'echo Done'
             }
-        }
-    }
-    post {
-        always {
-            sh 'rm -rf build'
-        }
-        success {
-            echo 'Pipeline completed successfully'
-        }
-        failure {
-            echo 'Pipeline failed'
         }
     }
 }
