@@ -90,7 +90,6 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
               <Button
                 component={'a'}
                 href={p.href}
-                target={'_blank'}
                 fullWidth
                 sx={{
                   justifyContent: 'flex-start',
