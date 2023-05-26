@@ -12,7 +12,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 
 const mock = [
   {
-    title: 'Built for developers',
+    title: 'Frontend',
     subtitle:
       'theFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
     icon: (

@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 
 const mock = [
   {
-    title: 'Built for developers',
+    title: 'Fullstack developer',
     subtitle:
       'theFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
     icon: (
@@ -29,7 +29,7 @@ const mock = [
     ),
   },
   {
-    title: 'Designed to be modern',
+    title: 'Cloud',
     subtitle:
       'Designed with the latest design trends in mind. theFront feels modern, minimal, and beautiful.',
     icon: (
@@ -51,7 +51,7 @@ const mock = [
     ),
   },
   {
-    title: 'Documentation for everything',
+    title: 'DevOps',
     subtitle:
       'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
     icon: (

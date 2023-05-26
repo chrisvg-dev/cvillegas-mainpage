@@ -166,14 +166,7 @@ const Contact = () => {
           <Box>
             <Box marginBottom={2}>
               <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
-                The most useful resource ever created for{' '}
-                <Typography
-                  color={'primary'}
-                  component={'span'}
-                  variant={'inherit'}
-                >
-                  startups
-                </Typography>
+                Need to get in touch?{' '}
               </Typography>
               <Typography color="text.secondary">
                 Using theFront to build your site means never worrying about

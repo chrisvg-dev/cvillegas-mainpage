@@ -6,12 +6,8 @@ import Container from 'components/Container';
 import {
   About,
   Contact,
-  Faq,
   Features,
   Hero,
-  Partners,
-  Pricings,
-  Reviews,
   Services,
   Users,
 } from './components';
@@ -53,9 +49,7 @@ const WebBasic = () => {
       <Container paddingTop={'0 !important'}>
         <Services />
       </Container>
-      <Container maxWidth={1} paddingTop={'0 !important'}>
-        <Partners />
-      </Container>
+
       <Box
         position={'relative'}
         sx={{
@@ -91,11 +85,6 @@ const WebBasic = () => {
       <Container paddingTop={'0 !important'}>
         <Users />
       </Container>
-      <Box bgcolor={'alternate.main'}>
-        <Container>
-          <Reviews />
-        </Container>
-      </Box>
       <Container>
         <Features />
       </Container>
@@ -105,14 +94,6 @@ const WebBasic = () => {
           backgroundColor: theme.palette.alternate.main,
         }}
       >
-        <Box>
-          <Container>
-            <Pricings />
-          </Container>
-          <Container paddingTop={'0 !important'}>
-            <Faq />
-          </Container>
-        </Box>
         <Box
           component={'svg'}
           preserveAspectRatio="none"
