@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
-import { alpha, useTheme } from '@mui/material/styles';
+//import { alpha, useTheme } from '@mui/material/styles';
+import { alpha } from '@mui/material/styles';
+
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { ThemeModeToggler } from './components';
 
 const Topbar = ({ onSidebarOpen }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
+  //const theme = useTheme();
+  //const { mode } = theme.palette;
 
   return (
     <Box
@@ -24,18 +26,10 @@ const Topbar = ({ onSidebarOpen }) => {
         component="a"
         href="/"
         title="theFront"
-        width={{ xs: 100, md: 120 }}
+        width={{ xs: 150, md: 170 }}
+        style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}
       >
-        <Box
-          component={'img'}
-          src={
-            mode === 'light'
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
-          height={1}
-          width={1}
-        />
+        CVILLEGAS-DEV
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginLeft={3}>

@@ -9,7 +9,7 @@ import { NavItem } from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
+  //const { mode } = theme.palette;
   const {
     landings: landingPages,
     secondary: secondaryPages,
@@ -31,18 +31,10 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         component="a"
         href="/"
         title="theFront"
-        width={{ xs: 100, md: 120 }}
+        width={{ xs: 150, md: 170 }}
+        style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}
       >
-        <Box
-          component={'img'}
-          src={
-            mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
-          height={1}
-          width={1}
-        />
+        CVILLEGAS-DEV
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>

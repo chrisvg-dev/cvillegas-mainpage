@@ -22,7 +22,7 @@ const Fluid = ({
   bgcolor = 'alternate.main',
 }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
+  //const { mode } = theme.palette;
 
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -69,18 +69,10 @@ const Fluid = ({
               component="a"
               href="/"
               title="theFront"
-              width={{ xs: 100, md: 120 }}
+              width={{ xs: 150, md: 170 }}
+              style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}
             >
-              <Box
-                component={'img'}
-                src={
-                  mode === 'light' && !colorInvert
-                    ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                    : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-                }
-                height={1}
-                width={1}
-              />
+              CVILLEGAS-DEV
             </Box>
             <Button
               variant="contained"
