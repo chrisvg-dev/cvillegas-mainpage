@@ -25,7 +25,10 @@ module.exports = {
       2,
       { 'SwitchCase': 1 },
     ],
-    'linebreak-style': 'off',
+    'linebreak-style': [
+      'error',
+      process.platform === 'win32' ? 'windows' : 'unix',
+    ],
     'quotes': [
       'error',
       'single',
