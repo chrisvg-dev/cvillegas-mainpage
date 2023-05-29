@@ -114,7 +114,24 @@ const WebBasic = () => {
           ></path>
         </Box>
       </Box>
-      <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
+      
+
+      <CookieConsent
+        location='bottom'
+        buttonText='Sure'
+        cookieName='cvillegas-cock'
+        style={{ background: '#2B373B' }}
+        buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
+        expires={150}
+        enableDeclineButton
+        onDecline={() => {
+          alert(':C');
+        }}
+      >
+        This website uses cookies to enhance the user experience.{' '}
+        <span style={{ fontSize: '12px' }}>Agree, please. {'<'}3</span>
+      </CookieConsent>
+
     </Main>
   );
 };
