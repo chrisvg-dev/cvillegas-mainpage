@@ -7,7 +7,7 @@ import getTheme from 'theme';
 import AOS from 'aos';
 
 export const useDarkMode = () => {
-  const [themeMode, setTheme] = useState('light');
+  const [themeMode, setTheme] = useState('dark');
   const [mountedComponent, setMountedComponent] = useState(false);
 
   const setMode = (mode) => {
@@ -21,15 +21,15 @@ export const useDarkMode = () => {
   };
 
   const themeToggler = () => {
-    themeMode === 'light' ? setMode('dark') : setMode('light');
+    setMode('dark');
   };
 
   useEffect(() => {
     try {
       const localTheme = window.localStorage.getItem('themeMode');
-      localTheme ? setTheme(localTheme) : setMode('light');
+      localTheme ? setTheme(localTheme) : setMode('dark');
     } catch {
-      setMode('light');
+      setMode('dark');
     }
 
     setMountedComponent(true);
