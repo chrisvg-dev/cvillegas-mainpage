@@ -2,6 +2,8 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
+import Divider from '@mui/material/Divider';
+
 import Container from 'components/Container';
 import {
   About,
@@ -10,6 +12,7 @@ import {
   Hero,
   Services,
   Users,
+  Categories
 } from './components';
 
 import CookieConsent from 'react-cookie-consent';
@@ -50,6 +53,13 @@ const WebBasic = () => {
       </Box>
       <Container paddingTop={'0 !important'}>
         <Services />
+      </Container>
+
+      <Container>
+        <Categories />
+        <Container>
+          <Divider />
+        </Container>
       </Container>
 
       <Box
