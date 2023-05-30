@@ -9,7 +9,7 @@ const mock = [
   {
     title: 'Fullstack developer',
     subtitle:
-      'theFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
+      'I\'ve worked using backend and frontend side, and I\'m able to solve many issues in both sides. I\' not afraid to try new things.',
     icon: (
       <svg
         height={24}
@@ -31,7 +31,7 @@ const mock = [
   {
     title: 'Cloud',
     subtitle:
-      'Designed with the latest design trends in mind. theFront feels modern, minimal, and beautiful.',
+      'I like the whole cloud platform, It\'s a nice way to deploy the applications and make them fast. I\'ve worked using AWS, Huawei Cloud and GCP, also I like make my own deploys using VPS.',
     icon: (
       <svg
         height={24}
@@ -53,7 +53,7 @@ const mock = [
   {
     title: 'DevOps',
     subtitle:
-      'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
+      'This is the most beautiful part, the idea of deploy everything on a single clic is the best part. I know how to use Jenkins and I\'m styding how to use other DevOps platforms like Azure DevOps, etc.',
     icon: (
       <svg
         height={24}

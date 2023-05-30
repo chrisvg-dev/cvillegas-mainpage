@@ -136,9 +136,6 @@ const Contact = () => {
                       />
                     </Grid>
                     <Grid item xs={12}>
-                      <TextField label="Occupation" fullWidth />
-                    </Grid>
-                    <Grid item xs={12}>
                       <Button
                         variant="contained"
                         color="primary"
