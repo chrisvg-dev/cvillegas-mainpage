@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
+//import Slider from 'react-slick';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -87,14 +87,7 @@ const Hero = () => {
   );
 
   const RightSide = () => {
-    const sliderOpts = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-    };
+
 
     return (
       <Box
@@ -125,25 +118,7 @@ const Hero = () => {
           },
         }}
       >
-        <Slider {...sliderOpts}>
-          {[
-            'https://assets.maccarianagency.com/backgrounds/img1.jpg',
-            'https://assets.maccarianagency.com/backgrounds/img3.jpg',
-            'https://assets.maccarianagency.com/backgrounds/img24.jpg',
-            'https://assets.maccarianagency.com/backgrounds/img25.jpg',
-          ].map((item) => (
-            <Box
-              key={item}
-              component={'img'}
-              loading="lazy"
-              src={item}
-              height={{ xs: 'auto', md: 1 }}
-              maxHeight={{ xs: 300, md: 1 }}
-              width={1}
-              maxWidth={1}
-            />
-          ))}
-        </Slider>
+        
       </Box>
     );
   };

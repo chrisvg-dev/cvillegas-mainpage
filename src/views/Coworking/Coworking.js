@@ -14,7 +14,7 @@ import {
   Application,
   Community,
   Events,
-  Hero,
+  //Hero,
   Locations,
   MapHero,
   Reviews,
@@ -36,7 +36,6 @@ const Coworking = () => {
 
   return (
     <Main>
-      <Hero />
       <Box bgcolor={theme.palette.alternate.main}>
         <Container>
           <Advantages />
