@@ -25,18 +25,18 @@ const Footer = () => {
             component="a"
             href="/"
             title="theFront"
-            width={80}
+            width={120}
           >
             <Box
-              component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
-              height={1}
-              width={1}
-            />
+              display={'flex'}
+              component="a"
+              href="/"
+              title="theFront"
+              width={{ xs: 200, md: 220 }}
+              style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}
+            >
+              CVILLEGAS
+            </Box>
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
@@ -83,7 +83,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; cvillegas-dev.com. 2023. All rights reserved
         </Typography>
         <Typography
           align={'center'}
@@ -91,10 +91,7 @@ const Footer = () => {
           color="text.secondary"
           component={'p'}
         >
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
+
         </Typography>
       </Grid>
     </Grid>

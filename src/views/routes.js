@@ -30,7 +30,7 @@ const routes = [
     renderer: (params = {}) => <HomeView {...params} />,
   },
   {
-    path: '/coworking',
+    path: '/portfolio',
     renderer: (params = {}) => <CoworkingView {...params} />,
   },
   {
@@ -45,7 +45,6 @@ const routes = [
     path: '/e-commerce',
     renderer: (params = {}) => <EcommerceView {...params} />,
   },
-
   {
     path: '/company-terms',
     renderer: (params = {}) => <CompanyTermsView {...params} />,
@@ -59,7 +58,7 @@ const routes = [
     renderer: (params = {}) => <ContactPageCoverView {...params} />,
   },
   {
-    path: '/about-side-cover',
+    path: '/about',
     renderer: (params = {}) => <AboutSideCoverView {...params} />,
   },
   {

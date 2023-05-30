@@ -12,11 +12,10 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   //const { mode } = theme.palette;
   const {
     landings: landingPages,
-    secondary: secondaryPages,
     company: companyPages,
-    account: accountPages,
+    /*account: accountPages,
     portfolio: portfolioPages,
-    blog: blogPages,
+    blog: blogPages,*/
   } = pages;
 
   return (
@@ -39,7 +38,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
+            title={'Projects'}
             id={'landing-pages'}
             items={landingPages}
             colorInvert={colorInvert}
@@ -47,43 +46,47 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Company'}
+            title={'Contact'}
             id={'company-pages'}
             items={companyPages}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Account'}
-            id={'account-pages'}
-            items={accountPages}
-            colorInvert={colorInvert}
-          />
+          <Box
+            display={'flex'}
+            component="a"
+            href="/about"
+            title="theFront"
+            width={{ xs: 60, md: 60 }}
+            style={{ textDecoration: 'none', color: 'white'}}
+          >
+            About
+          </Box>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Pages'}
-            id={'secondary-pages'}
-            items={secondaryPages}
-            colorInvert={colorInvert}
-          />
+          <Box
+            display={'flex'}
+            component="a"
+            href="/contact-page-cover"
+            title="theFront"
+            width={{ xs: 70, md: 70 }}
+            style={{ textDecoration: 'none', color: 'white'}}
+          >
+            Contact
+          </Box>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Blog'}
-            id={'blog-pages'}
-            items={blogPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Portfolio'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-            colorInvert={colorInvert}
-          />
+          <Box
+            display={'flex'}
+            component="a"
+            href="/portfolio"
+            title="theFront"
+            width={{ xs: 70, md: 70 }}
+            style={{ textDecoration: 'none', color: 'white'}}
+          >
+            Portfolio
+          </Box>
         </Box>
         
       </Box>

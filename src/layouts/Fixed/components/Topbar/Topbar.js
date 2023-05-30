@@ -70,18 +70,7 @@ const Topbar = ({ onSidebarOpen }) => {
         <Box marginLeft={3}>
           <ThemeModeToggler />
         </Box>
-        <Box marginLeft={3}>
-          <Button
-            variant="contained"
-            color="primary"
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-            size="large"
-          >
-            Purchase now
-          </Button>
-        </Box>
+
       </Box>
       <Box sx={{ display: { xs: 'flex', md: 'none' } }} alignItems={'center'}>
         <Box marginRight={1}>
